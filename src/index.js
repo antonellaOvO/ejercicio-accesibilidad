@@ -8,17 +8,17 @@ let borderAside = document.getElementById("border-aside");
 let borderAsideReversed = document.getElementById("border-aside-reversed");
 
 let tamaño = 16;
-
+/*Función para aumentar tamaño de letra*/
 function aumentar() {
   tamaño += 2;
   document.body.style.fontSize = tamaño + "px";
 }
-
+/*Función para disminuir tamaño de letra*/
 function disminuir() {
   tamaño -= 2;
   document.body.style.fontSize = tamaño + "px";
 }
-
+/*Función para pasar a modo Oscuro (fondo negro y letra blanca)*/
 function modoOscuro() {
   document.body.style.color = "white";
   document.body.style.background = "black";
@@ -40,7 +40,7 @@ function modoOscuro() {
     );
   });
 }
-
+/*Función para pasar a modo Oscuro (al estado anterior de modo Oscuro- es decir, al style original)*/
 function modoClaro() {
   document.body.style.color = "black";
   document.body.style.background = "white";
@@ -51,7 +51,7 @@ function modoClaro() {
     image.setAttribute("class", "card-img-top");
   });
 }
-
+/*Eventos para ejecutar las funciones de los correspondientes botones*/
 btnAumentar.addEventListener("click", aumentar);
 btnDisminuir.addEventListener("click", disminuir);
 btnOscuro.addEventListener("click", modoOscuro);
