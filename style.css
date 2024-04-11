@@ -1,5 +1,4 @@
 /*HEADER */
-
 .header-1 {
   background-image: url(images/succulents-img.jpg);
   background-size: cover;
@@ -20,14 +19,6 @@
 }
 
 /*ASIDES */
-
-.border-aside {
-  border-right: 2px solid black;
-}
-
-.border-aside-reversed {
-  border-left: 2px solid black;
-}
 
 .aside-content {
   font-family: "Exo 2", sans-serif;
